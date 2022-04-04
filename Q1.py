@@ -27,8 +27,10 @@ class Calculator:
         self.result = self.input1 / self.input2
         print("Divide: {} / {} = {:.2f}".format(self.input1, self.input2, self.result))
 
-    # Clears the result to 0
+    # Clears the attributes to 0
     def clear(self):
+        self.input1 = 0
+        self.input2 = 0
         self.result = 0
 
 # Ask user for 2 numbers
