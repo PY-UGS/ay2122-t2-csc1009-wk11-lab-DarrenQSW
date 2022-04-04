@@ -23,9 +23,13 @@ class Calculator:
         print("Multiply: {} * {} = {:.2f}".format(self.input1, self.input2, self.result))
 
     # Divides 2 numbers and prints the result in 2 decimal places
+    # Checks if input2 is 0, then print an error message
     def divider(self):
-        self.result = self.input1 / self.input2
-        print("Divide: {} / {} = {:.2f}".format(self.input1, self.input2, self.result))
+        if self.input2 == 0:
+            print("Cannot divide by 0!")
+        else:
+            self.result = self.input1 / self.input2
+            print("Divide: {} / {} = {:.2f}".format(self.input1, self.input2, self.result))
 
     # Clears the attributes to 0
     def clear(self):
